@@ -71,18 +71,13 @@ export default function API() {
         backgroundColor: "#c07b9936",
         minHeight: "100vh",
         width: "100%",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
       {loading ? (
-        <CircularProgress
-          sx={{
-            position: "absolute",
-            top: "50%",
-            left: "45%",
-          }}
-          size={100}
-          color="secondary"
-        />
+        <CircularProgress size={100} color="secondary" />
       ) : (
         <Reciepi
           loading={loading}
